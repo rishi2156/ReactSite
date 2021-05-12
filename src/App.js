@@ -5,6 +5,7 @@ import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 import SignUp from "./components/pages/SignUp";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/products" component={Products}></Route>
           <Route path="/sign-up" component={SignUp}></Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );
